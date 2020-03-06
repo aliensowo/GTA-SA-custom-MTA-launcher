@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{D0DC1693-8EAC-45F1-BADA-B67B4ABD0816}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Garifty RP</RootNamespace>
+    <AssemblyName>Garifty RP</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60DC8134-EBA5-43B8-BCC9-BB4BC16C2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>RP BOX Online.ico</ApplicationIcon>
+    <StartupObject>A.PQ</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x63</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-Module-.cs" />
+    <Compile Include="A\AQ.cs" />
+    <Compile Include="A\AR.cs" />
+    <Compile Include="A\AssemblyInfoAttribute.cs" />
+    <Compile Include="A\C.cs" />
+    <Compile Include="A\DD.cs" />
+    <Compile Include="A\E.cs" />
+    <Compile Include="A\ED.cs" />
+    <Compile Include="A\ER.cs" />
+    <Compile Include="A\FQ.cs" />
+    <Compile Include="A\GR.cs" />
+    <Compile Include="A\HQ.cs" />
+    <Compile Include="A\ID.cs" />
+    <Compile Include="A\IQ.cs" />
+    <Compile Include="A\J.cs" />
+    <Compile Include="A\JR.cs" />
+    <Compile Include="A\KQ.cs" />
+    <Compile Include="A\KR.cs" />
+    <Compile Include="A\L.cs" />
+    <Compile Include="A\LR.cs" />
+    <Compile Include="A\M.cs" />
+    <Compile Include="A\MD.cs" />
+    <Compile Include="A\MQ.cs" />
+    <Compile Include="A\MR.cs" />
+    <Compile Include="A\N.cs" />
+    <Compile Include="A\NQ.cs" />
+    <Compile Include="A\O.cs" />
+    <Compile Include="A\OR.cs" />
+    <Compile Include="A\P.cs" />
+    <Compile Include="A\PQ.cs" />
+    <Compile Include="A\PR.cs" />
+    <Compile Include="A\Q.cs" />
+    <Compile Include="A\QD.cs" />
+    <Compile Include="A\QR.cs" />
+    <Compile Include="A\RD.cs" />
+    <Compile Include="A\RR.cs" />
+    <Compile Include="A\S.cs" />
+    <Compile Include="A\SR.cs" />
+    <Compile Include="A\T.cs" />
+    <Compile Include="A\TR.cs" />
+    <Compile Include="A\UQ.cs" />
+    <Compile Include="A\V.cs" />
+    <Compile Include="A\VQ.cs" />
+    <Compile Include="A\W.cs" />
+    <Compile Include="A\X.cs" />
+    <Compile Include="A\XQ.cs" />
+    <Compile Include="A\XR.cs" />
+    <Compile Include="A\YR.cs" />
+    <Compile Include="A\Z.cs" />
+    <Compile Include="A\ZR.cs" />
+    <Compile Include="IWshRuntimeLibrary\IWshShell.cs" />
+    <Compile Include="IWshRuntimeLibrary\IWshShell2.cs" />
+    <Compile Include="IWshRuntimeLibrary\IWshShell3.cs" />
+    <Compile Include="IWshRuntimeLibrary\IWshShell_Class.cs" />
+    <Compile Include="IWshRuntimeLibrary\IWshShortcut.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RPBOXLauncher\CTriggerManager.cs" />
+    <Compile Include="RPBOXLauncher\Log\Log.cs" />
+    <Compile Include="RPBOXLauncher\Log\Logger.cs" />
+    <Compile Include="RPBOXLauncher\Log\СLogData.cs" />
+    <Compile Include="RPBOXLauncher\Properties\Settings.Designer.cs">
+      <DependentUpon>Settings.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RPBOXLauncher\Update\GameUpdater.cs" />
+    <Compile Include="RPBOXLauncher\Update\LauncherUpdater.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Multi Theft Auto.exe;" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+    <None Include="RPBOXLauncher\Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
